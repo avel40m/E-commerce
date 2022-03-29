@@ -56,6 +56,15 @@
     border: 2px solid white;
 }
 
+.cabecera__login__buscar{
+    padding: 1rem 1rem;
+    color: #A2A2A2;
+    background-color: white;
+    font-size: 1rem;
+    border: none;
+    display: none;
+}
+
 @media (max-width:900px) {
     .cabecera__imagen{
         padding-left: 2rem;
@@ -103,15 +112,34 @@
 
 @media (max-width:500px) {
     .cabecera__imagen img{
-        height: 25px;
-        margin: 0 0 0 -15px;
+        height: 40px;
+        margin: 0 0 0 30px;
     }   
+    .cabecera__span{
+        display: none;
+    }
+    .cabecera__imagen form{
+        position: absolute;
+        z-index: -1;
+        margin-top: 50px;
+        left: 230px;
+        float: left;        
+   }
     .cabecera__input{
         margin: 0 0 0 10px;
-        padding:2px 2px;
+        padding:10px 25px;
         width: 120px;
+        border-radius: 2rem;
+        display: none;
     }
     .cabecera__login__boton{
         padding: 5px 25px;
+        left: 250px;
+        position: absolute;
+    }
+    .cabecera__login__buscar{
+        display: block;
+        padding: 0 1rem;
+        cursor: pointer;
     }
 }
