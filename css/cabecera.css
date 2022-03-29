@@ -55,3 +55,63 @@
     background-color: blue;
     border: 2px solid white;
 }
+
+@media (max-width:900px) {
+    .cabecera__imagen{
+        padding-left: 2rem;
+    }
+    .cabecera__imagen img{
+        height: 35px;
+    }
+    .cabecera__input{
+        padding: 1rem;
+    }
+}
+
+@media (max-width:800px) {
+    .cabecera__input{
+        padding: 10px;
+    }
+    .cabecera__span{
+        padding: 10px;
+    }
+}
+
+@media (max-width:700px) {
+    .cabecera__imagen{
+        padding-left: 1rem;
+    }
+  .cabecera__imagen img{
+      height: 25px;
+  } 
+  .cabecera__input{
+      padding: 1px 1px;
+      margin: 0 0 0 1rem;
+  }
+  .cabecera__span{
+      padding: 1px 1px;
+  }
+  .cabecera__login__boton{
+      margin:0 40px 0 0;
+      padding: 5px 40px;
+      font-size: 10px;
+  }
+  .cabecera__input::placeholder{
+      font-size: 10px;
+  }
+}
+
+@media (max-width:500px) {
+    .cabecera__imagen img{
+        height: 25px;
+        margin: 0 0 0 -15px;
+    }   
+    .cabecera__input{
+        margin: 0 0 0 10px;
+        padding:2px 2px;
+        width: 120px;
+    }
+    .cabecera__login__boton{
+        padding: 5px 25px;
+    }
+}
