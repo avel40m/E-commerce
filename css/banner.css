@@ -32,6 +32,13 @@
     text-decoration: none;
     color: white;
     background-color: blue;
+    transition: .4s all;
+}
+
+.banner__descripcion a:hover{
+    background-color: white;
+    color: blue;
+    border: 2px solid blue;
 }
 
 @media (max-width:700px) {

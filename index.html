@@ -1,41 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>E-Commerce</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/cabecera.css">
-    <link rel="stylesheet" href="css/banner.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/cabecera.css" />
+    <link rel="stylesheet" href="css/banner.css" />
+    <link rel="stylesheet" href="css/galeria.css" />
+  </head>
+  <body>
     <header class="cabecera">
-        <div class="cabecera__imagen">
-            <img src="imagenes/Logo.png" alt="Logo de la compañia">
-            <form action="">
-                <input type="text" id="buscar" placeholder="¿Que deseá buscar?" class="cabecera__input">
-                <span class="cabecera__span"><i class="fa-solid fa-magnifying-glass"></i></span>
-            </form>
-        </div>
-        <div class="cabecera__login">
-            <button type="submit" class="cabecera__login__boton">Login</button>
-            <button class="cabecera__login__buscar" data-boton="buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
+      <div class="cabecera__imagen">
+        <img src="imagenes/Logo.png" alt="Logo de la compañia" />
+        <form action="">
+          <input
+            type="text"
+            id="buscar"
+            placeholder="¿Que deseá buscar?"
+            class="cabecera__input"
+          />
+          <span class="cabecera__span"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+        </form>
+      </div>
+      <div class="cabecera__login">
+        <button type="submit" class="cabecera__login__boton">Login</button>
+        <button class="cabecera__login__buscar" data-boton="buscar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
     </header>
 
-    <main>
-        <div class="banner">
-            <div class="banner__descripcion">
-                <h2>FEBRERO Promocional</h2>
-                <p>Producto seleccionado con 33% de descuento</p>
-                <a href="#">Ver Consolas</a>
-            </div>
+    <div class="banner">
+      <div class="banner__descripcion">
+        <h2>FEBRERO Promocional</h2>
+        <p>Producto seleccionado con 33% de descuento</p>
+        <a href="#">Ver Consolas</a>
+      </div>
+    </div>
+
+    <div class="galeria">
+      <div class="galeria__encabezado">
+        <div class="galeria__encabezado__titulo">
+          <h3>Star Wars</h3>
         </div>
-    </main>
+        <div class="galeria__encabezado__link">
+          <a href="#"
+            >Ver todos
+            <i class="fa-solid fa-arrow-right" style="margin-top: 1px"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="galeria__principal">
+        <div class="galeria__principal__descripcion">
+          <img src="imagenes/star-wars-g1f5abffd6_1920.jpg" alt="" />
+          <div class="galeria__principal__descripcion__texto">
+            <h5>Producto XYZ</h5>
+            <p>$ 60.00</p>
+            <a href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="galeria__principal__descripcion">
+          <img src="imagenes/lego-g17c64f642_1920.jpg" alt="" />          
+          <div class="galeria__principal__descripcion__texto">
+            <h5>Producto XYZ</h5>
+            <p>$ 60.00</p>
+            <a href="#">Ver producto</a>
+          </div>
+        </div>
+        <div class="galeria__principal__descripcion">
+          <img src="imagenes/millenium-falcon-g66367852e_1920.jpg" alt="" />                
+          <div class="galeria__principal__descripcion__texto">
+            <h5>Producto XYZ</h5>
+            <p>$ 60.00</p>
+            <a href="#">Ver producto</a>   
+        </div>            
+
+        </div>
+        <div class="galeria__principal__descripcion">
+          <img src="imagenes/star-wars-gf3f60e7dc_1920.jpg" alt="" />
+          <div class="galeria__principal__descripcion__texto">
+            <h5>Producto XYZ</h5>
+            <p>$ 60.00</p>
+            <a href="#">Ver producto</a>   
+        </div>            
+        </div>
+        <div class="galeria__principal__descripcion">
+          <img src="imagenes/stormtrooper-g41b3f8240_1920.jpg" alt="" />
+          <div class="galeria__principal__descripcion__texto">
+            <h5>Producto XYZ</h5>
+            <p>$ 60.00</p>
+            <a href="#">Ver producto</a>   
+        </div>            
+        </div>
+        <div class="galeria__principal__descripcion">
+          <img src="imagenes/yoda-g3c3ae98c6_1920.jpg" alt="" />               
+           <div class="galeria__principal__descripcion__texto">
+            <h5>Producto XYZ</h5>
+            <p>$ 60.00</p>
+            <a href="#">Ver producto</a>   
+        </div>            
+
+        </div>
+      </div>
+    </div>
 
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
