@@ -1,0 +1,82 @@
+.banner{
+    border: 1px solid black;
+    background: url('../imagenes/banner-image.png');
+    height: 352px;
+}
+
+.banner__descripcion{
+    position: relative;
+    top: 8rem;
+    left: 4rem;
+    color: white;
+}
+
+.banner__descripcion h2{
+    padding-bottom: 1rem;
+    font-size: 52px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.banner__descripcion p{
+    padding-bottom: 2rem;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+}
+
+.banner__descripcion a{
+    width: 129px;
+    height: 51px;
+    padding: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+}
+
+@media (max-width:700px) {
+    .banner{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 160px;
+    }
+    .banner__descripcion{
+        top: 4rem;
+    }
+
+    .banner__descripcion h2{
+        font-size: 20px;
+        padding-bottom: 10px;
+    }
+
+    .banner__descripcion p{
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    .banner__descripcion a{
+        width: 100px;
+        height: 30px;
+        padding: 8px;
+        font-size: 12px;
+
+    }
+}
+
+@media (max-width:500px) {
+    .banner__descripcion{
+        top: 5rem;
+        left: 2rem;
+    }
+    .banner__descripcion h2{
+        font-size: 12px;
+    }
+    .banner__descripcion p{
+        font-size: 8px;
+    }
+    .banner__descripcion a{
+        padding: 6px;
+        font-size: 12px;
+    }
+}
