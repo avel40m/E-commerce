@@ -88,6 +88,6 @@ input[type=submit]{
         margin: -3rem 4rem;
     }
     .contacto__formulario{
-        margin: 3rem 1rem;
+        margin: 3rem 0;
     }
 }

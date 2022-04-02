@@ -136,6 +136,7 @@
         padding: 5px 25px;
         left: 250px;
         position: absolute;
+        margin: -5px 0 0 0;
     }
     .cabecera__login__buscar{
         display: block;

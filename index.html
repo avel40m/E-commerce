@@ -20,13 +20,15 @@
     <link rel="stylesheet" href="css/cabecera.css" />
     <link rel="stylesheet" href="css/banner.css" />
     <link rel="stylesheet" href="css/galeria.css" />
-    <link rel="stylesheet" href="css/contacto.css">
-    <link rel="stylesheet" href="css/pieDePagina.css">
+    <link rel="stylesheet" href="css/contacto.css" />
+    <link rel="stylesheet" href="css/pieDePagina.css" />
   </head>
   <body>
     <header class="cabecera">
       <div class="cabecera__imagen">
-        <img src="imagenes/Logo.png" alt="Logo de la compañia" />
+        <a href="/">
+          <img src="imagenes/Logo.png" alt="Logo de la compañia" />
+        </a>
         <form action="">
           <input
             type="text"
@@ -40,7 +42,7 @@
         </form>
       </div>
       <div class="cabecera__login">
-        <button type="submit" class="cabecera__login__boton">Login</button>
+        <button type="button" onclick="location.href='login.html'" class="cabecera__login__boton">Login</button>
         <button class="cabecera__login__buscar" data-boton="buscar">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
@@ -252,7 +254,7 @@
 
     <div class="contacto">
       <div class="contacto__imagen">
-        <img src="imagenes/Logo.png" alt="">
+        <img src="imagenes/Logo.png" alt="" />
       </div>
       <div class="contacto__lista">
         <ul>
@@ -268,12 +270,18 @@
         <form action="#">
           <h4>Hable con nosotros</h4>
           <div class="contacto__formulario__input">
-            <input type="text" id="nombre" placeholder="Nombre">
+            <input type="text" id="nombre" placeholder="Nombre" />
           </div>
           <div class="contacto__formulario__input">
-            <textarea name="" id="mensaje" cols="39" rows="5" placeholder="Escribir Mensaje"></textarea>
+            <textarea
+              name=""
+              id="mensaje"
+              cols="39"
+              rows="5"
+              placeholder="Escribir Mensaje"
+            ></textarea>
           </div>
-          <input type="submit" value="Enviar mensaje">
+          <input type="submit" value="Enviar mensaje" />
         </form>
       </div>
     </div>
