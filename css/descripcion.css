@@ -1,0 +1,75 @@
+.descripcion{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 0;
+    background-color: #E5E5E5;
+}
+
+.descripcion__imagen img{
+    width: 500px;
+    height: 300px;
+}
+
+.descripcion__texto{
+    width: 500px;
+    height: 300px;
+    padding: 1rem 0;
+}
+
+.descripcion__texto p{
+    text-align: justify;
+}
+
+@media (max-width:700px) {
+    .descripcion{
+        padding: 1rem 1rem;
+    }
+    .descripcion__imagen img{
+        width: 260px;
+        height: 250px;
+    }
+    .descripcion__texto h1{
+        font-size: 1rem;
+        padding: 1rem 0;
+    }
+    .descripcion__texto p{
+        font-size: 12px;
+        padding: 1rem 0;
+    }
+}
+
+@media (max-width:600px) {
+    .descripcion__imagen img{
+        width: 200px;
+        height: 200px;
+    }
+    .descripcion{
+        padding: 1rem 1rem;
+        height: 200px;
+    }
+    .descripcion__texto{
+        padding: 0;
+    }
+    
+}
+
+@media (max-width:500px) {
+    .descripcion{
+        display: flex;
+        flex-direction: column;
+        height: 420px;
+        padding: 0;
+    }
+    .descripcion__imagen{
+        background-image: url('../imagenes/lego-g17c64f642_1920.jpg');
+        background-position: center;
+        background-size: cover;
+    }
+    .descripcion__imagen img{
+        width: 0;
+    }
+    .descripcion__texto{
+        width: 250px;
+        margin-left: 5rem;
+    }
+}
