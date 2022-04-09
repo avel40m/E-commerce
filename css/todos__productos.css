@@ -1,0 +1,63 @@
+.todos__productos{
+    background-color: #E5E5E5;
+
+}
+.todos__productos__encabezado{
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 5rem 2rem 5rem;
+}
+
+.todos__productos__encabezado__titulo h1{
+    font-family: raleway;
+    font-weight: 700;
+    color: #464646;
+}
+
+.todos__productos__encabezado__link a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: blue;
+    color: white;
+    transition: 400ms all;
+}
+
+.todos__productos__encabezado__link a:hover{
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+}
+
+.todos__productos__cuerpo{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+}
+
+
+.todos__productos__cuerpo__descripcion__imagen{
+    background-position: center;
+    background-size: cover;
+    width: 176px;
+    height: 174px;
+    color: white;
+    text-align: end;
+}
+
+.todos__productos__cuerpo__descripcion__imagen i{
+    padding: 10px;
+}
+.todos__productos__cuerpo__descripcion__texto h4{    
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: system-ui;
+}
+
+.todos__productos__cuerpo__descripcion__texto h5{
+    padding: 4px 0;
+}
+
+.todos__productos__cuerpo__descripcion__texto p {
+    font-size: 10px;
+}
