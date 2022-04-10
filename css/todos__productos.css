@@ -61,3 +61,55 @@
 .todos__productos__cuerpo__descripcion__texto p {
     font-size: 10px;
 }
+
+@media (max-width:768px) {
+    .todos__productos__encabezado{
+        padding: 1rem 5rem 0 5rem;
+    }
+    .todos__productos__encabezado__titulo h1{
+        font-size: 15px;
+    }
+    .todos__productos__encabezado__link a{
+        font-size: 12px;
+        padding: 8px;
+    }
+    .todos__productos__cuerpo__descripcion:nth-child(4n + 1){
+        display: none;
+    }
+    .todos__productos__cuerpo__descripcion__imagen{
+        width: 120px;
+        height: 100px;
+    }
+}
+
+@media (max-width:600px) {
+    .todos__productos__encabezado{
+        padding: 1rem 2rem 0 4rem;
+    }
+    .todos__productos__cuerpo__descripcion__imagen{
+        width: 100px;
+        height: 80px;
+    }
+}
+
+@media (max-width:500px) {
+    .todos__productos__cuerpo{
+        display: flex;
+        flex-wrap: wrap;
+        width: 230px;
+    }
+    .todos__productos__cuerpo__descripcion__imagen {
+        width: 80px;
+        height: 60px;
+    }
+    .todos__productos__encabezado {
+        padding: 1rem 8rem 0 5rem;
+    }
+    .todos__productos__encabezado__titulo h1 {
+        font-size: 10px;
+    }
+    .todos__productos__encabezado__link a {
+        font-size: 10px;
+        padding: 6px;
+    }
+}
