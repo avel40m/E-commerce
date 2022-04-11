@@ -53,7 +53,7 @@
       <div class="banner__descripcion">
         <h2>FEBRERO Promocional</h2>
         <p>Producto seleccionado con 33% de descuento</p>
-        <a href="#">Ver Consolas</a>
+        <a href="#consolas">Ver Consolas</a>
       </div>
     </div>
 
@@ -122,7 +122,7 @@
       </div>
     </div>
 
-    <div class="galeria">
+    <div class="galeria" id="consolas">
       <div class="galeria__encabezado">
         <div class="galeria__encabezado__titulo">
           <h3>Consolas</h3>
@@ -270,7 +270,9 @@
         <form action="#">
           <h4>Hable con nosotros</h4>
           <div class="contacto__formulario__input">
-            <input type="text" id="nombre" placeholder="Nombre" />
+            <input type="text" id="nombre" placeholder="Nombre" data-nombre />
+            <br>
+            <span class="contacto__formulario__input__error" data-input-texto></span>
           </div>
           <div class="contacto__formulario__input">
             <textarea
@@ -279,9 +281,12 @@
               cols="39"
               rows="5"
               placeholder="Escribir Mensaje"
+              data-descripcion
             ></textarea>
+            <br/>
+            <span class="contacto__formulario__input__error" data-input-descripcion></span>
           </div>
-          <input type="submit" value="Enviar mensaje" />
+          <input type="submit" value="Enviar mensaje" id="boton" />
         </form>
       </div>
     </div>
@@ -294,5 +299,6 @@
     </footer>
 
     <script src="js/index.js"></script>
+    <script src="js/validacionCampo.js"></script>
   </body>
 </html>

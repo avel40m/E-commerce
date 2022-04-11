@@ -38,6 +38,11 @@
     border: 1px solid #FFFFFF;
 }
 
+.contacto__formulario__input__error{
+    font-size: 12px;
+    color: red;
+}
+
 input[type=submit]{
     background-color: #2A7AE4;
     width: 144px;

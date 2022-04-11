@@ -96,7 +96,9 @@
         <form action="#">
           <h4>Hable con nosotros</h4>
           <div class="contacto__formulario__input">
-            <input type="text" id="nombre" placeholder="Nombre" />
+            <input type="text" id="nombre" placeholder="Nombre" data-nombre />
+            <br>
+            <span class="contacto__formulario__input__error" data-input-texto></span>
           </div>
           <div class="contacto__formulario__input">
             <textarea
@@ -105,9 +107,12 @@
               cols="39"
               rows="5"
               placeholder="Escribir Mensaje"
+              data-descripcion
             ></textarea>
+            <br>
+            <span class="contacto__formulario__input__error" data-input-descripcion></span>
           </div>
-          <input type="submit" value="Enviar mensaje" />
+          <input type="submit" value="Enviar mensaje" id="boton" />
         </form>
       </div>
     </div>
@@ -120,5 +125,6 @@
     </footer>
 
     <script src="js/index.js"></script>
+    <script src="js/validacionCampo.js"></script>
   </body>
 </html>
