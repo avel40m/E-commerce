@@ -1,0 +1,171 @@
+.form__agregar{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    background-color: #E5E5E5;
+    padding: 2rem 0;
+}
+
+.drop-area{
+    border: 5px dashed #ddd;
+    height: 200px;
+    width: 450px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    color: #C8C8C8;
+}
+
+.drop-area:active{
+    background-color: #b8d4fe;
+    color: black;
+    border: 2px dashed #618ac9;
+}
+
+.drop-area i{
+    font-size: 2rem;
+}
+
+.drop-area h2{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #000;
+}
+
+.drop-area span{
+    font-size: 14px;
+    color: #000;
+}
+
+.drop-area button{
+    padding: 10px 25px;
+    font-size: 1rem;
+    border: 0;
+    outline: none;
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.file-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#preview{
+    margin-top: 10px;
+}
+
+.status-text{
+    padding: 0 10px;
+}
+
+.success{
+    color: #52ad5a;
+}
+
+.failure{
+    color: #ff0000;
+}
+
+.form__agregar h5{
+    font-size: 25px;
+    color: #464646;
+    margin: 1rem 0;
+}
+
+.form-grupo input[type=text]{
+    padding: 1rem 0;
+    width: 450px;
+    border: none;
+    margin: 1rem 0;
+}
+
+.form-grupo [type=text]:focus {
+    border: none;
+}
+
+.form-grupo input[type=submit]{
+    background-color: blue;
+    width: 450px;
+    padding: 1rem;
+    padding: 1rem;
+    color: #FFFFFF;
+    border: none;
+    font-size: 1rem;
+    color: white;
+}
+
+@media (max-width:768px) {
+    .form-grupo{
+        margin: 0 0 0 1rem;
+    }
+    .form__agregar h5{
+        font-size: 20px;
+        padding: 0 13rem 1rem 0;
+    }
+    .drop-area{
+        height: 200px;
+        width: 350px;
+    }
+    .form-grupo input[type=text]{
+        width: 350px;
+        margin: 0 6rem 1rem 0;
+    }
+    .form-grupo input[type=submit]{
+        width: 350px;
+        margin: 0 6rem 0 0;
+        font-size: 14px;
+    }
+}
+@media (max-width:500px) {
+    .form-grupo{
+        padding: 0 0 0 12rem;
+    }
+    .form__agregar h5{
+        font-size: 1rem;
+        padding: 0 2rem 0 0;
+    }
+    .form-grupo input[type=text]{
+        width: 200px;
+        margin: 0 15rem 1rem 0;
+        padding: 10px 0;
+    }
+    .form-grupo input[type=submit]{
+        width: 200px;
+        margin: 0 15rem 0 0;
+        font-size: 10px;
+        height: 40px;
+    }
+    .form-grupo input[type=text]::placeholder{
+        font-size: 10px;
+    }
+    .drop-area{
+        height: 150px;
+        width: 200px;
+    }
+    .drop-area i{
+        font-size: 1rem;
+    }
+    .drop-area h2{
+        font-size: 12px;
+    }
+    .drop-area span{
+        font-size: 10px;
+    }
+    .drop-area button{
+        padding: 4px 14px;
+        font-size: 10px;
+        margin: 8px;
+    }
+}
