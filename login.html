@@ -63,17 +63,23 @@
             type="text"
             placeholder="Escriba su correo electronico"
             name="email"
+            data-email
           />
+          <br>
+          <span class="error-login" data-errorEmail></span>
         </div>
         <div class="formulario__inicio__input">
           <input
             type="password"
             placeholder="Escriba su contraseña"
             name="password"
+            data-clave
           />
+          <br>
+          <span class="error-login" data-errorClave></span>
         </div>
         <div class="formulario__inicio__input">
-          <input type="submit" value="Entrar" />
+          <input type="submit" value="Entrar" data-login />
         </div>
       </form>
     </div>
@@ -126,5 +132,6 @@
 
     <script src="js/index.js"></script>
     <script src="js/validacionCampo.js"></script>
+    <script src="js/validacionLogin.js"></script>
   </body>
 </html>
