@@ -1,73 +1,52 @@
-const dropArea = document.querySelector("[data-dropArea]");
-const dragText = document.querySelector("[data-dropParrafo]");
-const button = document.querySelector("[data-button]");
-const input = document.querySelector("[data-inputFile]");
-let files;
-
-button.addEventListener('click', (e) => {
-    e.preventDefault();
-    input.click();
-});
-
-input.addEventListener('change', (e) => {
-    files = input.files;
-    dropArea.classList.add("active");
-    showFiles(files);
-    dropArea.classList.remove("active");
-})
-
-dropArea.addEventListener('dragover', (e) => {
-    e.preventDefault();
-    dropArea.classList.add("active");
-    dragText.textContent = "Suelta para subir el archivo";
-})
-
-dropArea.addEventListener('dragleave', (e) => {
-    e.preventDefault();
-    dropArea.classList.remove("active");
-    dragText.textContent = "Arrastra y suelta la imagen";
-})
-
-dropArea.addEventListener('drop', (e) => {
-    e.preventDefault();
-    files = e.dataTransfer.files;
-    showFiles(files);
-    dropArea.classList.remove("active");
-    dragText.textContent = "Arrastra y suelta la imagen";
-})
-
-function showFiles(files){
-    if (files.length === undefined) {
-        processFile(files);
-    }else{
-        for(const file of files){
-            processFile(file);
-        }
+document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
+    const dropZoneElement = inputElement.closest(".drop-zone");
+  dropZoneElement.addEventListener("click", (e) => {
+      inputElement.click();
+    });
+  inputElement.addEventListener("change", (e) => {
+      if (inputElement.files.length) {
+        updateThumbnail(dropZoneElement, inputElement.files[0]);
+      }
+    });
+  dropZoneElement.addEventListener("dragover", (e) => {
+      e.preventDefault();
+      dropZoneElement.classList.add("drop-zone--over");
+    });
+  ["dragleave", "dragend"].forEach((type) => {
+      dropZoneElement.addEventListener(type, (e) => {
+        dropZoneElement.classList.remove("drop-zone--over");
+      });
+    });
+  dropZoneElement.addEventListener("drop", (e) => {
+      e.preventDefault();
+  if (e.dataTransfer.files.length) {
+        inputElement.files = e.dataTransfer.files;
+        updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
+      }
+  dropZoneElement.classList.remove("drop-zone--over");
+    });
+  });
+  function updateThumbnail(dropZoneElement, file) {
+    let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
+  // First time - remove the prompt
+    if (dropZoneElement.querySelector(".drop-zone__prompt")) {
+      dropZoneElement.querySelector(".drop-zone__prompt").remove();
     }
-}
-
-function processFile(file){
-    const docType = file.type;
-    const validExtensions = ['image/jpeg','image/jpg','image/png','image/gif'];
-    if (validExtensions.includes(docType)) {
-        //archivo valido    
-        const fileReader = new FileReader();
-        const id = `file-${Math.random().toString(32).substring(7)}`;
-        
-        fileReader.addEventListener('load', () => {
-            const fileUrl = fileReader.result;
-            const image = `<div id="${id}" class="file-container">
-                                <img src="${fileUrl}" alt="${file.name}" width="50">
-                                <div class="status">
-                                    <span>${file.name}</span>
-                                </div>
-                            </div>`;
-            const html = document.querySelector('#preview').innerHTML;
-            document.querySelector('#preview').innerHTML = image;
-        });
-        fileReader.readAsDataURL(file);
+  // First time - there is no thumbnail element, so lets create it
+    if (!thumbnailElement) {
+      thumbnailElement = document.createElement("div");
+      thumbnailElement.classList.add("drop-zone__thumb");
+      dropZoneElement.appendChild(thumbnailElement);
+    }
+  thumbnailElement.dataset.label = file.name;
+  // Show thumbnail for image files
+    if (file.type.startsWith("image/")) {
+      const reader = new FileReader();
+  reader.readAsDataURL(file);
+      reader.onload = () => {
+        thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
+      };
     } else {
-        //archivo no valido
-        alert("No es una archivo valido");
+      thumbnailElement.style.backgroundImage = null;
     }
-}
+  } 

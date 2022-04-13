@@ -16,10 +16,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/cabecera.css">
-    <link rel="stylesheet" href="css/agregar.css">
-    <link rel="stylesheet" href="css/contacto.css">
-    <link rel="stylesheet" href="css/pieDePagina.css">
+    <link rel="stylesheet" href="css/cabecera.css" />
+    <link rel="stylesheet" href="css/agregar.css" />
+    <link rel="stylesheet" href="css/contacto.css" />
+    <link rel="stylesheet" href="css/pieDePagina.css" />
   </head>
   <body>
     <header class="cabecera">
@@ -40,7 +40,13 @@
         </form>
       </div>
       <div class="cabecera__login">
-        <button type="button" onclick="location.href='login.html'" class="cabecera__login__boton">Login</button>
+        <button
+          type="button"
+          onclick="location.href='login.html'"
+          class="cabecera__login__boton"
+        >
+          Login
+        </button>
         <button class="cabecera__login__buscar" data-boton="buscar">
           <i class="fa-solid fa-magnifying-glass"></i>
         </button>
@@ -50,28 +56,38 @@
       <h5>Agregar nuevo producto</h5>
       <form action="">
         <div class="form-grupo">
-          <div class="drop-area" data-dropArea>
-            <i class="fa-solid fa-image"></i>
-            <h2 data-dropParrafo>Arrastre para agregar una imagen para el producto</h2>
-            <span>O</span>
-            <button data-button>Seleccionar archivo</button>
-            <input type="file" name="archivo" id="input-file" data-inputFile hidden multiple />
+          <!--DROPAREA-->
+          <div class="drop-zone">
+            <span class="drop-zone__prompt">
+              <i class="fa-solid fa-image"></i>
+              <br>
+              suelte el archivo aquí o haga clic
+            </span>
+            <input type="file" name="myFile" class="drop-zone__input" />
           </div>
-          <div id="preview"></div>
+          <!--DROPAREA-->
         </div>
         <div class="form-grupo">
-          <input type="text" name="producto" placeholder="Nombre del producto">
-        </div>  
-        <div class="form-grupo">
-          <input type="text" name="precio" placeholder="Precio del producto">
-        </div>  
-        <div class="form-grupo">
-          <input type="text" name="descripcion" placeholder="Descripcion del producto">
-        </div>  
-        <div class="form-grupo">
-          <input type="submit" value="Agregar producto">
+          <input
+            type="text"
+            name="producto"
+            placeholder="Nombre del producto"
+          />
         </div>
-      </form>  
+        <div class="form-grupo">
+          <input type="text" name="precio" placeholder="Precio del producto" />
+        </div>
+        <div class="form-grupo">
+          <input
+            type="text"
+            name="descripcion"
+            placeholder="Descripcion del producto"
+          />
+        </div>
+        <div class="form-grupo">
+          <input type="submit" value="Agregar producto" />
+        </div>
+      </form>
     </div>
 
     <div class="contacto">
@@ -93,8 +109,11 @@
           <h4>Hable con nosotros</h4>
           <div class="contacto__formulario__input">
             <input type="text" id="nombre" placeholder="Nombre" data-nombre />
-            <br>
-            <span class="contacto__formulario__input__error" data-input-texto></span>
+            <br />
+            <span
+              class="contacto__formulario__input__error"
+              data-input-texto
+            ></span>
           </div>
           <div class="contacto__formulario__input">
             <textarea
@@ -105,8 +124,11 @@
               placeholder="Escribir Mensaje"
               data-descripcion
             ></textarea>
-            <br>
-            <span class="contacto__formulario__input__error" data-input-descripcion></span>
+            <br />
+            <span
+              class="contacto__formulario__input__error"
+              data-input-descripcion
+            ></span>
           </div>
           <input type="submit" value="Enviar mensaje" id="boton" />
         </form>
