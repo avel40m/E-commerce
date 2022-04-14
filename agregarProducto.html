@@ -72,20 +72,32 @@
             type="text"
             name="producto"
             placeholder="Nombre del producto"
+            data-agregarNombre
           />
+          <br>
+          <span data-agregarNombreError class="error__agregar"></span>
         </div>
         <div class="form-grupo">
-          <input type="text" name="precio" placeholder="Precio del producto" />
+          <input type="text"
+           name="precio"
+            placeholder="Precio del producto"
+            data-agregarPrecio />
+            <br>
+            <span data-agregarPrecioError class="error__agregar"></span>
         </div>
         <div class="form-grupo">
           <input
             type="text"
             name="descripcion"
             placeholder="Descripcion del producto"
+            data-agregarDescripcion
           />
+          <br>
+          <span data-agregarDescripcionError class="error__agregar"></span>
         </div>
         <div class="form-grupo">
-          <input type="submit" value="Agregar producto" />
+          <input type="submit" value="Agregar producto" 
+          data-validarAgregar />
         </div>
       </form>
     </div>
@@ -142,7 +154,7 @@
       </div>
     </footer>
     <script src="js/index.js"></script>
-    <script src="js/droparea.js"></script>
+    <script src="js/agregarProducto.js"></script>
     <script src="js/validacionCampo.js"></script>
   </body>
 </html>
