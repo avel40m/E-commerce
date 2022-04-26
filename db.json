@@ -1,0 +1,11 @@
+{
+    "starWars": [
+        {
+            "id":1,
+            "nombre":"Vasos de Star Wars",
+            "precio":195.50,
+            "descripcion":"El vaso de start Wars está echo de porcelana y muy buen estado.",
+            "imagen":"imagenes/vasostartwars.jpg"
+        }
+    ]
+}
