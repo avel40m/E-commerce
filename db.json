@@ -1,11 +1,29 @@
 {
-    "starWars": [
+    "ecommerce": [
         {
             "id":1,
             "nombre":"Vasos de Star Wars",
             "precio":195.50,
             "descripcion":"El vaso de start Wars está echo de porcelana y muy buen estado.",
+            "tipo":"starwars",
             "imagen":"imagenes/vasostartwars.jpg"
+        },
+        {
+            "id":2,
+            "nombre":"Mando de videos",
+            "precio":500,
+            "descripcion":"Mando de video para nintendo gamer ediction 2022",
+            "tipo":"consola",
+            "imagen":"imagenes/unsplash_0POwK6iAiRQ.jpg"
+            
+        },
+        {
+            "id":3,
+            "nombre":"Logo de consola",
+            "precio":200,
+            "descripcion":"Logo de la marca japonesa hit taris produce la nueva consola play station",
+            "tipo":"diversos",
+            "imagen":"imagenes/unsplash_fMP-oCze3AY.jpg"            
         }
     ]
 }
