@@ -54,7 +54,7 @@
     </header>
     <div class="form__agregar">
       <h5>Agregar nuevo producto</h5>
-      <form action="">
+      <form action="" data-form>
         <div class="form-grupo">
           <!--DROPAREA-->
           <div class="drop-zone">
@@ -63,7 +63,7 @@
               <br>
               suelte el archivo aquí o haga clic
             </span>
-            <input type="file" name="myFile" class="drop-zone__input" />
+            <input type="file" name="myFile" class="drop-zone__input" data-file/>
           </div>
           <!--DROPAREA-->
         </div>
@@ -94,6 +94,14 @@
           />
           <br>
           <span data-agregarDescripcionError class="error__agregar"></span>
+        </div>
+        <div class="form-grupo">
+          <select name="tipo" id="tipo" data-agregarTipo>
+            <option value="" disabled selected>Seleccionar el tipo</option>
+            <option value="starwars">Star Wars</option>
+            <option value="consola">Consolas</option>
+            <option value="diversos">Diversos</option>
+          </select>
         </div>
         <div class="form-grupo">
           <input type="submit" value="Agregar producto" 
@@ -154,7 +162,7 @@
       </div>
     </footer>
     <script src="js/index.js"></script>
-    <script src="js/agregarProducto.js"></script>
+    <script type="module" src="js/agregarProducto.js"></script>
     <script src="js/validacionCampo.js"></script>
   </body>
 </html>

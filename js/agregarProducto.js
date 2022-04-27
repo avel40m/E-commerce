@@ -1,3 +1,4 @@
+import { enviarDatos } from './controlladores/agregar.controladores.js';
 // DROP
 document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
     const dropZoneElement = inputElement.closest(".drop-zone");
@@ -68,7 +69,7 @@ const agregarDescripcionError = document.querySelector("[data-agregarDescripcion
 agregarProducto.addEventListener('click', (e) => {
   e.preventDefault();
   if (validacionAgregarNombre(agregarNombre) && validacionAgregarProducto(agregarPrecio) && validacionAgregarDescripcion(agregarDescripcion)) {
-      location.href = "agregarProducto.html";
+    enviarDatos.formulario();      
   }else{
     alert("Complete los campos");
   }

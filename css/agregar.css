@@ -75,6 +75,13 @@
     border: none;
 }
 
+.form-grupo select{
+    padding: 1rem 0;
+    width: 450px;
+    border: none;
+    margin: 1rem 0;
+}
+
 .form-grupo input[type=submit]{
     background-color: blue;
     width: 450px;
