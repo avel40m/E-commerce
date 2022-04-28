@@ -1,3 +1,4 @@
+import { listaService } from '../producto.js'
 const formulario = (e) => {
     const archivo = document.querySelector("[data-file]").value;
     const nombre = document.querySelector("[data-agregarNombre]").value;
@@ -8,12 +9,10 @@ const formulario = (e) => {
     var textoImagen =archivo.split("\\");
     textoImagen = "imagenes/" + textoImagen[2];
     console.log(textoImagen);
-    console.log(nombre);
-    console.log(precio);
-    console.log(descripcion);
-    console.log(tipo);
 
-    console.log("Datos enviados");
+   listaService.crearProducto(nombre,precio,descripcion,tipo,textoImagen).then(respuesta => {
+        console.log(respuesta);
+    }).catch(error => console.log(error));
 }
 
 export const enviarDatos = {
