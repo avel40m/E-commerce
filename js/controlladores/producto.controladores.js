@@ -8,7 +8,7 @@ const crearNuevaLinea = (nombre, precio, imagen) => {
           <div class="galeria__principal__descripcion__texto">
             <h5>${nombre}</h5>
             <p>$ ${precio}</p>
-            <a href="#">Ver producto</a>
+            <a href="producto.html">Ver producto</a>
           </div>
           </div>`
     linea.innerHTML = contenido;

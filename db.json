@@ -47,6 +47,14 @@
       "descripcion": "Sonic muñeco echo con porcelana muy buen estado de fabricación",
       "tipo": "diversos",
       "imagen": "imagenes/unsplash_sYVY_ZKwaxU.jpg"
+    },
+    {
+      "id": "436637b1-cb3e-4534-8c64-ce4e15e397e2",
+      "nombre": "Villano Star Wars",
+      "precio": 600,
+      "descripcion": "Imagen de el villano de setar wars.",
+      "tipo": "starwars",
+      "imagen": "imagenes/unsplash_4OHkK555s1A.jpg"
     }
   ]
 }
