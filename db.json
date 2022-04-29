@@ -55,6 +55,14 @@
       "descripcion": "Imagen de el villano de setar wars.",
       "tipo": "starwars",
       "imagen": "imagenes/unsplash_4OHkK555s1A.jpg"
+    },
+    {
+      "id": "e8034292-be65-4524-8d9b-8145081c3d63",
+      "nombre": "Remera Adidas",
+      "precio": 620,
+      "descripcion": "Remera de adidas talle M, S, X, nos quedo solamente camisetas para hombres.",
+      "tipo": "diversos",
+      "imagen": "imagenes/unsplash_bUgaIaZysH0.jpg"
     }
   ]
 }
