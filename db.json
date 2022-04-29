@@ -25,22 +25,6 @@
       "imagen": "imagenes/unsplash_fMP-oCze3AY.jpg"
     },
     {
-      "id": "7eac40dc-7516-4e38-8389-64a81f13dcd4",
-      "nombre": "Cabeza de star Wars",
-      "precio": 100,
-      "descripcion": "Cabeza de el imperio contrataca pequeñas cabeza de plástico",
-      "tipo": "starwars",
-      "imagen": "imagenes/unsplash_epRFE_hBNjo.jpg"
-    },
-    {
-      "id": "95872872-d627-43f7-a805-65784c72032e",
-      "nombre": "Mando de Videos",
-      "precio": 900,
-      "descripcion": "Mando de videos juegos para consolas de play statión 3 y nintendo 64",
-      "tipo": "consola",
-      "imagen": "imagenes/unsplash_wa5z9o9fgjw.jpg"
-    },
-    {
       "id": "caa2828e-b454-4709-a575-37046025a305",
       "nombre": "Sonic",
       "precio": 560,

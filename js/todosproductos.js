@@ -6,15 +6,19 @@ const nuevaLinea = (id,nombre,precio,imagen) => {
     <div
       class="todos__productos__cuerpo__descripcion__imagen" style="background-image: url('${imagen}');">
      <a href=""><i class="fa-solid fa-pencil"></i></a>
-      <a href=""><i class="fa-solid fa-trash"></i></a>
+      <a href="#" data-eliminarproducto id="${id}"><i class="fa-solid fa-trash"></i></a>
     </div>
     <div class="todos__productos__cuerpo__descripcion__texto">
       <h4>${nombre}</h4>
       <h5>${precio}</h5>
     </div>
-  </div>
-  <br><br><br><br>`;
+  </div>`;
   linea.innerHTML = contenido;
+  const btnEliminar = linea.querySelector("[data-eliminarproducto]");
+  btnEliminar.addEventListener('click', () => {
+    const id = btnEliminar.id;
+    listaService.eliminarProducto(id).then(respuesta => console.log(respuesta)).catch(error => console.log(error));
+  });
   return linea;
 }
 
@@ -26,3 +30,7 @@ listaService.listaProducto().then((data) => {
         todosProductos.appendChild(linea);
     });
 }).catch(error => console.log(error));
+
+const eliminarProducto = (id) => {
+  console.log("El id es: " + id);
+}
