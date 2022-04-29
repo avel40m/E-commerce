@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos star Wars</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/cabecera.css" />
+    <link rel="stylesheet" href="../css/banner.css" />
+    <link rel="stylesheet" href="../css/galeria.css" />
+    <link rel="stylesheet" href="../css/contacto.css" />
+    <link rel="stylesheet" href="../css/pieDePagina.css" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <div class="cabecera__imagen">
+        <a href="/">
+          <img src="../imagenes/Logo.png" alt="Logo de la compañia" />
+        </a>
+        <form action="">
+          <input
+            type="text"
+            id="buscar"
+            placeholder="¿Que deseá buscar?"
+            class="cabecera__input"
+          />
+          <span class="cabecera__span"
+            ><i class="fa-solid fa-magnifying-glass"></i
+          ></span>
+        </form>
+      </div>
+      <div class="cabecera__login">
+        <button
+          type="button"
+          onclick="location.href='login.html'"
+          class="cabecera__login__boton"
+        >
+          Login
+        </button>
+        <button class="cabecera__login__buscar" data-boton="buscar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="galeria__principal" data-listadosdiversos>
+      
+    </div>
+
+    <div class="contacto">
+      <div class="contacto__imagen">
+        <img src="../imagenes/Logo.png" alt="" />
+      </div>
+      <div class="contacto__lista">
+        <ul>
+          <li><a href="#">Quienes somos</a></li>
+          <li><a href="#">Politica de privacidad</a></li>
+          <li><a href="#">Programa de fidelidad</a></li>
+          <li><a href="#">Nuestra tiendas</a></li>
+          <li><a href="#">Quiero ser franquiciado</a></li>
+          <li><a href="#">Anuncie aqui</a></li>
+        </ul>
+      </div>
+      <div class="contacto__formulario">
+        <form action="#">
+          <h4>Hable con nosotros</h4>
+          <div class="contacto__formulario__input">
+            <input type="text" id="nombre" placeholder="Nombre" data-nombre />
+            <br />
+            <span
+              class="contacto__formulario__input__error"
+              data-input-texto
+            ></span>
+          </div>
+          <div class="contacto__formulario__input">
+            <textarea
+              name=""
+              id="mensaje"
+              cols="39"
+              rows="5"
+              placeholder="Escribir Mensaje"
+              data-descripcion
+            ></textarea>
+            <br />
+            <span
+              class="contacto__formulario__input__error"
+              data-input-descripcion
+            ></span>
+          </div>
+          <input type="submit" value="Enviar mensaje" id="boton" />
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="pie_de_pagina">
+        <p>Desarrollado por Mendez Avelino</p>
+        <p>2022</p>
+      </div>
+    </footer>
+    <script type="module" src="../js/listadodiversos.js"></script>
+    <script src="../js/validacionCampo.js"></script>
+  </body>
+</html>
