@@ -47,6 +47,14 @@
       "descripcion": "Remera de adidas talle M, S, X, nos quedo solamente camisetas para hombres.",
       "tipo": "diversos",
       "imagen": "imagenes/unsplash_bUgaIaZysH0.jpg"
+    },
+    {
+      "id": "36100b98-db87-408e-94b2-f4e78a448c26",
+      "nombre": "Peluche de pikachu",
+      "precio": 800,
+      "descripcion": "El peluche de pikachu es de una medida de 2 metros por 1,50 metros, está en  un buen estado del material",
+      "tipo": "diversos",
+      "imagen": "imagenes/unsplash_r27umXAelDc.jpg"
     }
   ]
 }
