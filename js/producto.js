@@ -21,9 +21,14 @@ const detallesProducto = (id) => {
     return fetch(`http://localhost:3000/ecommerce/${id}`).then(respuesta => respuesta.json());
 }
 
+const buscarProducto = (buscar) => {
+    return fetch(`http://localhost:3000/ecommerce/${buscar}`).then(respuesta => respuesta.json());
+}
+
 export const listaService = {
     listaProducto,
     crearProducto,
     eliminarProducto,
-    detallesProducto
+    detallesProducto,
+    buscarProducto
 };

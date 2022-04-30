@@ -35,3 +35,10 @@ const datos = document.querySelector("[data-listado-starwars]");
 const datosConsolas = document.querySelector("[data-listado-consolas]");
 const datosDiversos = document.querySelector("[data-listado-diversos]")
 
+const busqueda = document.querySelector("[data-busqueda]");
+
+busqueda.addEventListener('click', (e) => {
+    e.preventDefault();
+    const input = document.querySelector("[data-inputBusqueda]").value;
+    window.location.href = `busquedaproducto.html?q=${input}`;
+});

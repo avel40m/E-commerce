@@ -1,6 +1,6 @@
 import { listaService } from './producto.js'
 
-const nuevaLinea = (nombre,precio,imagen) =>  {
+const nuevaLinea = (id,nombre,precio,imagen) =>  {
     const linea = document.createElement("div");
     linea.classList.add("galeria__principal");
     const contenido = `<div class="galeria__principal__descripcion">
@@ -8,7 +8,7 @@ const nuevaLinea = (nombre,precio,imagen) =>  {
     <div class="galeria__principal__descripcion__texto">
       <h5>${nombre}</h5>
       <p>$ ${precio}</p>
-      <a href="producto.html">Ver producto</a>
+      <a href="../../producto.html?id=${id}">Ver producto</a>
     </div>
   </div>`
   linea.innerHTML = contenido;
@@ -19,7 +19,7 @@ const listadoConsola = document.querySelector("[data-listadosconsolas]");
 
 listaService.listaProducto().then((data) => {
     data.forEach(datos => {
-        const linea = nuevaLinea(datos.nombre,datos.precio,datos.imagen);
+        const linea = nuevaLinea(datos.id,datos.nombre,datos.precio,datos.imagen);
         if (datos.tipo === "consola") {
             listadoConsola.appendChild(linea);                
         }
