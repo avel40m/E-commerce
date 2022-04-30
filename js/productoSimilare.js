@@ -23,8 +23,9 @@ listaService.listaProducto().then((datos) => {
     let productos = [];
 
     for (let i = 0; i < 6; i++) {
-
-        productos.push(datos[Math.floor(Math.random() * datos.length)]);
+        
+        var nuevo = datos[Math.floor(Math.random() * datos.length)];
+        if(productos.indexOf(nuevo)!=-1){continue;}else{productos.push(nuevo);}
     }
 
     productos.forEach(producto => {

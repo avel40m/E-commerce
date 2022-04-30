@@ -55,6 +55,30 @@
       "descripcion": "El peluche de pikachu es de una medida de 2 metros por 1,50 metros, está en  un buen estado del material",
       "tipo": "diversos",
       "imagen": "imagenes/unsplash_r27umXAelDc.jpg"
+    },
+    {
+      "id": "41f7d6b7-b326-4f30-abb0-dd87a38a1852",
+      "nombre": "Alarma de Nintendo",
+      "precio": 1029,
+      "descripcion": "Alarma reloj generado por la empresa nintendo en el año 1984, bajo la marca japonesa",
+      "tipo": "diversos",
+      "imagen": "imagenes/unsplash_jMT6BrgBuXU.jpg"
+    },
+    {
+      "id": "74463a76-e870-417c-b4b8-ffbbe0f31408",
+      "nombre": "Realidad Virtual",
+      "precio": 5040,
+      "descripcion": "Anteojos de realidad virtual adaptable para la consolas play statión 4 y nintendo wii",
+      "tipo": "diversos",
+      "imagen": "imagenes/unsplash_MxVkWPiJALs.jpg"
+    },
+    {
+      "id": "2d0a466c-fd0e-4434-bf71-104824fa35a1",
+      "nombre": "Yoda",
+      "precio": 550,
+      "descripcion": "Era famoso dentro de la Orden por su sabiduría, poderes de la Fuerza y combate con sables de luz, y vivió durante casi 900 años.",
+      "tipo": "starwars",
+      "imagen": "imagenes/yoda-g3c3ae98c6_1920.jpg"
     }
   ]
 }
