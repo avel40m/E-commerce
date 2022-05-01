@@ -52,18 +52,21 @@
         </button>
       </div>
     </header>
+
     <div class="form__agregar">
-      <h5>Agregar nuevo producto</h5>
+      <h5>Editar producto</h5>
       <form action="" data-form>
+          <input type="hidden" data-id>
         <div class="form-grupo">
           <!--DROPAREA-->
           <div class="drop-zone">
             <span class="drop-zone__prompt">
-              <i class="fa-solid fa-image"></i>
+              <!-- <i class="fa-solid fa-image"></i>
               <br>
-              suelte el archivo aquí o haga clic
+              suelte el archivo aquí o haga clic -->
+              <img src="" data-visulizar alt="" width="200">
             </span>
-            <input type="file" name="myFile" class="drop-zone__input" data-file/>
+            <input type="file" name="myFile" class="drop-zone__input" accept="image/*" data-file/>
           </div>
           <!--DROPAREA-->
         </div>
@@ -104,7 +107,8 @@
           </select>
         </div>
         <div class="form-grupo">
-          <input type="submit" value="Agregar producto"/>
+          <input type="submit" value="Agregar producto" 
+          data-validarAgregar />
         </div>
       </form>
     </div>
@@ -160,9 +164,10 @@
         <p>2022</p>
       </div>
     </footer>
+
     <script src="js/index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js" integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script type="module" src="js/agregarProducto.js"></script>
+    <script type="module" src="js/editarProducto.js"></script>
     <script src="js/validacionCampo.js"></script>
   </body>
 </html>

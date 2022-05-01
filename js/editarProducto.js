@@ -1,5 +1,6 @@
-import { enviarDatos } from './controlladores/agregar.controladores.js';
-// DROP
+import { listaService } from './producto.js';
+import { editarDatos } from './controlladores/editarControladores.js';
+
 document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
     const dropZoneElement = inputElement.closest(".drop-zone");
   dropZoneElement.addEventListener("click", (e) => {
@@ -53,25 +54,25 @@ document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
     }
   } 
 // DROP
-
-// validacion de los campos
-const formulario = document.querySelector("[data-form]");
-
+const agregarId = document.querySelector("[data-id]");
+const agregarProducto = document.querySelector("[data-validarAgregar]");
 const agregarNombre = document.querySelector("[data-agregarNombre]");
 const agregarNombreError = document.querySelector("[data-agregarNombreError]");
-
 const agregarPrecio = document.querySelector("[data-agregarPrecio]"); 
 const agregarPrecioError = document.querySelector("[data-agregarPrecioError]");
-
 const agregarDescripcion = document.querySelector("[data-agregarDescripcion]");
 const agregarDescripcionError = document.querySelector("[data-agregarDescripcionError]");
+const agregarTipo = document.querySelector("[data-agregarTipo]");
+const visulizar = document.querySelector("[data-visulizar]");
+const agregarImagen = document.querySelector("[data-file]");
 
-formulario.addEventListener('submit', (e) => {
+
+
+agregarProducto.addEventListener('click', (e) => {
   e.preventDefault();
   if (validacionAgregarNombre(agregarNombre) && validacionAgregarProducto(agregarPrecio) && validacionAgregarDescripcion(agregarDescripcion)) {
-    enviarDatos.formulario();
-    console.log(agregarNombre.value + " " + agregarDescripcion.value);
-    window.location.href = "todosProductos.html";      
+    editarDatos.formulario();      
+    window.location.href = "todosProductos.html";
   }else{
     alert("Complete los campos");
   }
@@ -124,3 +125,16 @@ function validacionAgregarDescripcion(validar){
   agregarDescripcionError.textContent = "";
   return true;
 }
+
+const url = new URL(window.location);
+const id = url.searchParams.get("id");
+
+listaService.detallesProducto(id).then((respuesta) => {
+    agregarId.value = respuesta.id;
+    agregarNombre.value = respuesta.nombre;
+    agregarPrecio.value = respuesta.precio;
+    agregarDescripcion.value = respuesta.descripcion;
+    agregarTipo.value = respuesta.tipo;
+    visulizar.value = respuesta.imagen;
+    visulizar.src = respuesta.imagen;
+}).catch(error => console.log(error));

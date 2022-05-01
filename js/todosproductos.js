@@ -5,7 +5,7 @@ const nuevaLinea = (id,nombre,precio,imagen) => {
     const contenido = `<div class="todos__productos__cuerpo__descripcion">
     <div
       class="todos__productos__cuerpo__descripcion__imagen" style="background-image: url('${imagen}');">
-     <a href=""><i class="fa-solid fa-pencil"></i></a>
+     <a href="editarProducto.html?id=${id}"><i class="fa-solid fa-pencil"></i></a>
       <a href="#" data-eliminarproducto id="${id}"><i class="fa-solid fa-trash"></i></a>
     </div>
     <div class="todos__productos__cuerpo__descripcion__texto">

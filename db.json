@@ -10,27 +10,19 @@
     },
     {
       "id": 2,
-      "nombre": "Mando de videos",
-      "precio": 500,
-      "descripcion": "Mando de video para nintendo gamer ediction 2022",
+      "nombre": "Consola color blanco",
+      "precio": "15092",
+      "descripcion": "Consola de videos con multiples videos, muy parecido a la play statión 4",
       "tipo": "consola",
-      "imagen": "imagenes/unsplash_0POwK6iAiRQ.jpg"
-    },
-    {
-      "id": 3,
-      "nombre": "Logo de consola",
-      "precio": 200,
-      "descripcion": "Logo de la marca japonesa hit taris produce la nueva consola play station",
-      "tipo": "diversos",
-      "imagen": "imagenes/unsplash_fMP-oCze3AY.jpg"
+      "imagen": "http://127.0.0.1:5500/imagenes/unsplash_0POwK6iAiRQ.jpg"
     },
     {
       "id": "caa2828e-b454-4709-a575-37046025a305",
       "nombre": "Sonic",
-      "precio": 560,
-      "descripcion": "Sonic muñeco echo con porcelana muy buen estado de fabricación",
-      "tipo": "diversos",
-      "imagen": "imagenes/unsplash_sYVY_ZKwaxU.jpg"
+      "precio": "1000",
+      "descripcion": "Sonic muñeco echo con porcelana muy buen estado de fabricación, con colas de partes de fondo",
+      "tipo": "consola",
+      "imagen": "http://127.0.0.1:5500/imagenes/unsplash_sYVY_ZKwaxU.jpg"
     },
     {
       "id": "436637b1-cb3e-4534-8c64-ce4e15e397e2",
@@ -74,11 +66,27 @@
     },
     {
       "id": "2d0a466c-fd0e-4434-bf71-104824fa35a1",
-      "nombre": "Yoda",
-      "precio": 550,
+      "nombre": "Yoda version 2.0",
+      "precio": "600",
       "descripcion": "Era famoso dentro de la Orden por su sabiduría, poderes de la Fuerza y combate con sables de luz, y vivió durante casi 900 años.",
       "tipo": "starwars",
-      "imagen": "imagenes/yoda-g3c3ae98c6_1920.jpg"
+      "imagen": "http://127.0.0.1:5500/imagenes/yoda-g3c3ae98c6_1920.jpg"
+    },
+    {
+      "id": "cfdd9d25-1e5c-4505-a622-d56649d00f0d",
+      "nombre": "Consola color azul",
+      "precio": 50390,
+      "descripcion": "Consola de videos con multiples videos, muy parecido a la play statión 4",
+      "tipo": "consola",
+      "imagen": "imagenes/unsplash_caNzzoxls8Q.jpg"
+    },
+    {
+      "id": "df090d67-d4a4-4e72-b7b2-d537e7cff2c8",
+      "nombre": "Tetris",
+      "precio": 15092,
+      "descripcion": "Tetris creado el año 1980 por la compañia itachi, trayendo 999 juego integreado",
+      "tipo": "consola",
+      "imagen": "imagenes/unsplash_k-xYhI3-gJM.jpg"
     }
   ]
 }
