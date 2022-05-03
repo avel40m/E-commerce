@@ -11,18 +11,18 @@
     {
       "id": 2,
       "nombre": "Consola color blanco",
-      "precio": "15092",
+      "precio": "8000",
       "descripcion": "Consola de videos con multiples videos, muy parecido a la play statión 4",
       "tipo": "consola",
-      "imagen": "http://127.0.0.1:5500/imagenes/unsplash_0POwK6iAiRQ.jpg"
+      "imagen": "imagenes/unsplash_0POwK6iAiRQ.jpg"
     },
     {
       "id": "caa2828e-b454-4709-a575-37046025a305",
       "nombre": "Sonic",
-      "precio": "1000",
+      "precio": "50",
       "descripcion": "Sonic muñeco echo con porcelana muy buen estado de fabricación, con colas de partes de fondo",
       "tipo": "consola",
-      "imagen": "http://127.0.0.1:5500/imagenes/unsplash_sYVY_ZKwaxU.jpg"
+      "imagen": "imagenes/unsplash_sYVY_ZKwaxU.jpg"
     },
     {
       "id": "436637b1-cb3e-4534-8c64-ce4e15e397e2",
@@ -34,8 +34,8 @@
     },
     {
       "id": "e8034292-be65-4524-8d9b-8145081c3d63",
-      "nombre": "Remera Adidas",
-      "precio": 620,
+      "nombre": "Remera color gris",
+      "precio": "620",
       "descripcion": "Remera de adidas talle M, S, X, nos quedo solamente camisetas para hombres.",
       "tipo": "diversos",
       "imagen": "imagenes/unsplash_bUgaIaZysH0.jpg"
@@ -59,8 +59,8 @@
     {
       "id": "74463a76-e870-417c-b4b8-ffbbe0f31408",
       "nombre": "Realidad Virtual",
-      "precio": 5040,
-      "descripcion": "Anteojos de realidad virtual adaptable para la consolas play statión 4 y nintendo wii",
+      "precio": "500",
+      "descripcion": "Anteojos de realidad virtual adaptable para realidad virtual compatible con play statión 4 y nintendo wii",
       "tipo": "diversos",
       "imagen": "imagenes/unsplash_MxVkWPiJALs.jpg"
     },
@@ -70,7 +70,7 @@
       "precio": "600",
       "descripcion": "Era famoso dentro de la Orden por su sabiduría, poderes de la Fuerza y combate con sables de luz, y vivió durante casi 900 años.",
       "tipo": "starwars",
-      "imagen": "http://127.0.0.1:5500/imagenes/yoda-g3c3ae98c6_1920.jpg"
+      "imagen": "imagenes/yoda-g3c3ae98c6_1920.jpg"
     },
     {
       "id": "cfdd9d25-1e5c-4505-a622-d56649d00f0d",
@@ -87,6 +87,14 @@
       "descripcion": "Tetris creado el año 1980 por la compañia itachi, trayendo 999 juego integreado",
       "tipo": "consola",
       "imagen": "imagenes/unsplash_k-xYhI3-gJM.jpg"
+    },
+    {
+      "id": "e3dda086-60ac-4214-b854-eb9f2a2f151e",
+      "nombre": "Cabeza de star Wars",
+      "precio": 600,
+      "descripcion": "Cabeza de el imperio contrataca pequeñas cabeza de plástico",
+      "tipo": "starwars",
+      "imagen": "imagenes/unsplash_epRFE_hBNjo.jpg"
     }
   ]
 }
