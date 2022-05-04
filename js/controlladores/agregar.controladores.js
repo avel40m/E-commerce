@@ -6,9 +6,8 @@ const formulario = (e) => {
     const descripcion = document.querySelector("[data-agregarDescripcion]").value;
     const tipo = document.querySelector("[data-agregarTipo]").value;
 
-    var textoImagen =archivo.split("\\");
-    textoImagen = "imagenes/" + textoImagen[2];
-    console.log(textoImagen);
+    var arrayImagen = archivo.split("\\");
+    const textoImagen = "imagenes/"+arrayImagen[2];
 
    listaService.crearProducto(nombre,precio,descripcion,tipo,textoImagen).then(respuesta => {
         console.log(respuesta);

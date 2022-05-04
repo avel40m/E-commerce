@@ -27,8 +27,8 @@
     {
       "id": "436637b1-cb3e-4534-8c64-ce4e15e397e2",
       "nombre": "Villano Star Wars",
-      "precio": 600,
-      "descripcion": "Imagen de el villano de setar wars.",
+      "precio": "17560",
+      "descripcion": "Imagen de el villano de star wars, correspondiente al episodio 1 y 2 de la serie.",
       "tipo": "starwars",
       "imagen": "imagenes/unsplash_4OHkK555s1A.jpg"
     },

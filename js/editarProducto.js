@@ -72,7 +72,7 @@ agregarProducto.addEventListener('click', (e) => {
   e.preventDefault();
   if (validacionAgregarNombre(agregarNombre) && validacionAgregarProducto(agregarPrecio) && validacionAgregarDescripcion(agregarDescripcion)) {
     editarDatos.formulario();      
-    window.location.href = "todosProductos.html";
+    // window.location.href = "todosProductos.html";
   }else{
     alert("Complete los campos");
   }

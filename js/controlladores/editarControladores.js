@@ -10,7 +10,7 @@ const formulario = (e) => {
     const imagen = document.querySelector("[data-visulizar]").src;
     var arrayImagen = imagen.split("/");
     const textoImagen = arrayImagen[3] + '/' + arrayImagen[4];
-    console.log(textoImagen);
+
     listaService.actualizarProducto(Id,Nombre,Precio,Descripcion,Tipo,textoImagen);
 }
 
